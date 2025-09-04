@@ -1,0 +1,399 @@
+<html lang="en">
+
+<head>
+   <title>Criminal Face Identification</title>
+   <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+   <!-- Favicon icon -->
+   <link rel="shortcut icon" href="../static/assets/images/favicon.png" type="image/x-icon">
+   <link rel="icon" href="../static/assets/images/favicon.ico" type="image/x-icon">
+
+   <!-- Google font-->
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+
+   <!-- themify -->
+   <link rel="stylesheet" type="text/css" href="../static/assets/icon/themify-icons/themify-icons.css">
+
+   <!-- iconfont -->
+   <link rel="stylesheet" type="text/css" href="../static/assets/icon/icofont/css/icofont.css">
+
+   <!-- simple line icon -->
+   <link rel="stylesheet" type="text/css" href="../static/assets/icon/simple-line-icons/css/simple-line-icons.css">
+
+   <!-- Required Fremwork -->
+   <link rel="stylesheet" type="text/css" href="../static/assets/plugins/bootstrap/css/bootstrap.min.css">
+
+   <!-- Chartlist chart css -->
+   <link rel="stylesheet" href="../static/assets/plugins/chartist/dist/chartist.css" type="text/css" media="all">
+
+   <!-- Weather css -->
+   <link href="../static/assets/css/svg-weather.css" rel="stylesheet">
+
+
+   <!-- Style.css -->
+   <link rel="stylesheet" type="text/css" href="../static/assets/css/main.css">
+
+   <!-- Responsive.css-->
+   <link rel="stylesheet" type="text/css" href="../static/assets/css/responsive.css">
+
+</head>
+
+<body class="sidebar-mini fixed">
+   <div class="loader-bg">
+      <div class="loader-bar">
+      </div>
+   </div>
+   <div class="wrapper">
+      <!-- Navbar-->
+      <header class="main-header-top hidden-print">
+         <a href="" class="logo"><img class="img-fluid able-logo" src="../static/assets/images/logo.png" alt="Theme-logo"></a>
+         <nav class="navbar navbar-static-top">
+            <!-- Sidebar toggle button-->
+            <a href="#!" data-toggle="offcanvas" class="sidebar-toggle"></a>
+            <ul class="top-nav lft-nav">
+               <li>
+                  <a href="/add_police">
+                     <i class="ti-files"> </i><span> Add Police</span>                  </a>               </li>  
+				<li>
+                  <a href="/entry">
+                     <i class="ti-files"> </i><span> Add Criminal and Case</span>                  </a>               </li>               
+              <!-- <li class="dropdown">
+                  <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
+                     <span>Dropdown </span><i class=" icofont icofont-simple-down"></i>
+                  </a>
+                  <ul class="dropdown-menu settings-menu">
+                     <li><a href="#">List item 1</a></li>
+                     <li><a href="#">List item 2</a></li>
+                     <li><a href="#">List item 3</a></li>
+                     <li><a href="#">List item 4</a></li>
+                     <li><a href="#">List item 5</a></li>
+                  </ul>
+               </li>-->
+              
+            </ul>
+            <!-- Navbar Right Menu-->
+            <div class="navbar-custom-menu f-right">
+              
+
+               <ul class="top-nav">
+                  <!--Notification Menu-->
+                    
+                 
+                  <!-- chat dropdown -->
+                  
+                  <!-- User Menu-->
+                  <li class="dropdown">
+                     <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
+                        <span><!--<img class="img-circle " src="../static/assets/images/avatar-1.png" style="width:40px;" alt="User Image">--></span>
+                        <span>Law Enforcement <i class=" icofont icofont-simple-down"></i></span>
+
+                     </a>
+                     <ul class="dropdown-menu settings-menu">
+                        <!--<li><a href="#!"><i class="icon-settings"></i> Settings</a></li>-->
+                       
+                        <li><a href="logout"><i class="icon-logout"></i> Logout</a></li>
+
+                     </ul>
+                  </li>
+               </ul>
+
+               <!-- search -->
+               <div id="morphsearch" class="morphsearch">
+                  
+                  <div class="morphsearch-content">
+                    
+                  </div>
+                  <!-- /morphsearch-content -->
+                  <span class="morphsearch-close"><i class="icofont icofont-search-alt-1"></i></span>
+               </div>
+               <!-- search end -->
+            </div>
+        </nav>
+      </header>
+      <!-- Side-Nav-->
+      <aside class="main-sidebar hidden-print ">
+         <section class="sidebar" id="sidebar-scroll">
+            <!-- Sidebar Menu-->
+            <ul class="sidebar-menu">
+               <li class="nav-level">--- Navigation</li>
+                <li class="active treeview">
+                    <a class="waves-effect waves-dark" href="/home">
+                        <i class="icon-speedometer"></i><span> Dashboard</span>
+                    </a>                
+                </li>
+         
+
+                <li class="treeview"><a class="waves-effect waves-dark" href="/view_criminal"><i class="icon-book-open"></i><span> Criminal Information</span></a>
+                   
+                </li>
+                
+                <li class="treeview">
+                    <a class="waves-effect waves-dark" href="/verify_criminal">
+                        <i class="icon-list"></i><span> Criminal Identification</span>
+                    </a>                
+                </li>
+
+
+                <li class="treeview"><a class="waves-effect waves-dark" href="/view_report"><i class="icon-docs"></i><span>Criminal Detected Report</span></a>
+                   
+                </li>
+
+                <li class="treeview"><a class="waves-effect waves-dark" href="/logout"><i class="icofont icofont-company"></i><span>Logout</span></a>
+                   
+                </li>
+            </ul>
+         </section>
+      </aside>
+      <!-- Sidebar chat start -->
+      <div id="sidebar" class="p-fixed header-users showChat">
+         <div class="had-container">
+            <div class="card card_main header-users-main">
+               <div class="card-content user-box">
+                  <div class="md-group-add-on p-20">
+                     <span class="md-add-on">
+                                    <i class="icofont icofont-search-alt-2 chat-search"></i>
+                                 </span>
+                    
+
+                  </div>
+                  <div class="media friendlist-main">
+
+                     <h6></h6>
+
+                  </div>
+                  <div class="main-friend-list">
+                    
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <div class="showChat_inner">
+        
+         
+         
+         <div class="media chat-reply-box">
+           
+
+         </div>
+      </div>
+      <!-- Sidebar chat end-->
+      <div class="content-wrapper">
+         <!-- Container-fluid starts -->
+         <!-- Main content starts -->
+         <div class="container-fluid">
+            <div class="row">
+               <div class="main-header">
+                  <h4>Dashboard</h4>
+               </div>
+            </div>
+            <!-- 4-blocks row start -->
+            <div class="row dashboard-header">
+               
+            </div>
+            <!-- 4-blocks row end -->
+
+            <!-- 1-3-block row start -->
+            <div class="row">
+               <div class="col-lg-4">
+                  <div class="card">
+                     <div class="user-block-2">
+                        <img class="img-fluid" src="../static/assets/images/ppp.jpg" alt="user-header">
+                        <h5>{{data[1]}}</h5>
+                        <h6>Station ID: {{data[6]}}</h6>
+                     </div>
+                     <div class="card-block">
+                        <div class="user-block-2-activities">
+                           <div class="user-block-2-active">
+                              <i class="icofont icofont-clock-time"></i> Mobile No.: {{data[2]}}
+                              
+                           </div>
+                        </div>
+						<div class="user-block-2-activities">
+                           <div class="user-block-2-active">
+                              <i class="icofont icofont-clock-time"></i> Email: {{data[3]}}
+                              
+                           </div>
+                        </div>
+						<div class="user-block-2-activities">
+                           <div class="user-block-2-active">
+                              <i class="icofont icofont-clock-time"></i> Area: {{data[4]}}
+                              
+                           </div>
+                        </div>
+						<div class="user-block-2-activities">
+                           <div class="user-block-2-active">
+                              <i class="icofont icofont-clock-time"></i> City: {{data[5]}}
+                              
+                           </div>
+                        </div>
+                       
+                        <!--<div class="text-center">
+                           <button type="button" class="btn btn-warning waves-effect waves-light text-uppercase m-r-30">
+                                    Follows
+                                </button>
+                           <button type="button" class="btn btn-primary waves-effect waves-light text-uppercase">
+                                    Message
+                                </button>
+                        </div>-->
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8">
+                  <div class="card">
+                     <div class="card-header">
+					<h3>CrimeNet Model: Build and Train</h3>
+					<h4>LiveFeed Frame Conversion</h4>
+                        <div style="width:95%; background-color:#000033; border-radius: 5%; padding:10px" align="center">
+					<img src="{{ url_for('video_feed2') }}" style="width:100%; border-radius: 5%" class="img-fluid">
+					
+					
+  <form id="form1" name="form1" method="post" action="/add_photo?vid={{vid}}&act=1">
+  
+    <div align="center">
+      <input type="hidden" name="vid" value="{{ vid }}">
+      <!--<input type="submit" name="Submit" value="Submit">-->
+    </div>
+  </form>
+  <script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+  document.getElementById("form1").submit(); 
+}, 20000);
+</script>
+
+
+             </div>
+			 
+			 
+			 
+			 
+                     </div>
+                    
+                  </div>
+               </div>
+              
+            </div>
+            <!-- 1-3-block row end -->
+
+            <!-- 2-1 block start -->
+           
+            <!-- 2-1 block end -->
+         </div>
+         <!-- Main content ends -->
+         <!-- Container-fluid ends -->
+         <div class="fixed-button">
+           
+         </div>
+      </div>
+   </div>
+
+
+   <!-- Warning Section Starts -->
+   <!-- Older IE warning message -->
+   <!--[if lt IE 9]>
+      <div class="ie-warning">
+          <h1>Warning!!</h1>
+          <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+          <div class="iew-container">
+              <ul class="iew-download">
+                  <li>
+                      <a href="http://www.google.com/chrome/">
+                          <img src="assets/images/browser/chrome.png" alt="Chrome">
+                          <div>Chrome</div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.mozilla.org/en-US/firefox/new/">
+                          <img src="assets/images/browser/firefox.png" alt="Firefox">
+                          <div>Firefox</div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="http://www.opera.com">
+                          <img src="assets/images/browser/opera.png" alt="Opera">
+                          <div>Opera</div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.apple.com/safari/">
+                          <img src="assets/images/browser/safari.png" alt="Safari">
+                          <div>Safari</div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                          <img src="assets/images/browser/ie.png" alt="">
+                          <div>IE (9 & above)</div>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <p>Sorry for the inconvenience!</p>
+      </div>
+      <![endif]-->
+   <!-- Warning Section Ends -->
+
+   <!-- Required Jqurey -->
+   <script src="../static/assets/plugins/Jquery/dist/jquery.min.js"></script>
+   <script src="../static/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+   <script src="../static/assets/plugins/tether/dist/js/tether.min.js"></script>
+
+   <!-- Required Fremwork -->
+   <script src="../static/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+   <!-- Scrollbar JS-->
+   <script src="../static/assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+   <script src="../static/assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+
+   <!--classic JS-->
+   <script src="../static/assets/plugins/classie/classie.js"></script>
+
+   <!-- notification -->
+   <script src="../static/assets/plugins/notification/js/bootstrap-growl.min.js"></script>
+
+   <!-- Sparkline charts -->
+   <script src="../static/assets/plugins/jquery-sparkline/dist/jquery.sparkline.js"></script>
+
+   <!-- Counter js  -->
+   <script src="../static/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+   <script src="../static/assets/plugins/countdown/js/jquery.counterup.js"></script>
+
+   <!-- Echart js -->
+   <script src="../static/assets/plugins/charts/echarts/js/echarts-all.js"></script>
+
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+   <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+
+   <!-- custom js -->
+   <script type="text/javascript" src="../static/assets/js/main.min.js"></script>
+   <script type="text/javascript" src="../static/assets/pages/dashboard.js"></script>
+   <script type="text/javascript" src="../static/assets/pages/elements.js"></script>
+   <script src="../static/assets/js/menu.min.js"></script>
+<script>
+var $window = $(window);
+var nav = $('.fixed-button');
+$window.scroll(function(){
+    if ($window.scrollTop() >= 200) {
+       nav.addClass('active');
+    }
+    else {
+       nav.removeClass('active');
+    }
+});
+</script>
+
+</body>
+
+</html>

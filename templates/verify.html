@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+   <title>Criminal Face Identification</title>
+</head>
+<body>
+
+{% if msg=="yes" %}
+<h4 style="color:#009900"> Criminal Face Identified..</h4>
+
+<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.parent.location.href= '/identify?cid={{cid}}';
+}, 10000);
+</script>
+
+{% elif msg=="no" %}
+
+<h4>Criminal Face not identified</h4>
+<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.parent.location.href= '/entry';
+}, 4000);
+</script>
+
+
+
+{% else %}
+
+  
+<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/verify';
+}, 10000);
+</script>
+
+{% endif %}
+</body>
+
+</html>
